@@ -20,13 +20,10 @@ const eqArrays = (array1, array2) => {
 // Otherwise you get back a big fat false!
 
 const eqObjects = function(object1, object2) {
-  let object1Length = Object.keys(object1).length;
-  let object2Length = Object.keys(object2).length;
-  if (object1Length !== object2Length) {
+  if (Object.keys(object1).length !== Object.keys(object2).length) {
     return false;
   } else {
     for (let keys of Object.keys(object1)) {
-      console.log(keys);
       if (Array.isArray(object1[keys]) && Array.isArray(object2[keys])) {
         if (eqArrays(object1[keys], object2[keys]) !== true) {
           return false;
