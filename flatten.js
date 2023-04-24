@@ -8,10 +8,11 @@ const eqArrays = (array1, array2) => {
 };
 
 const assertArraysEqual = function(array1, array2) {
+  const inspect = require('util').inspect; 
   if (eqArrays(array1, array2)) {
-    return console.log(`✅✅✅ Assertion Passed: Array 1 === Array 2`);
+    return console.log(`✅✅✅ Assertion Passed: ${inspect(array1)} === ${inspect(array2)}`);
   } else {
-    return console.log(`🛑🛑🛑 Assertion Failed: Array 1 !== Array 2`);
+    return console.log(`🛑🛑🛑 Assertion Failed: ${inspect(array1)} !== ${inspect(array2)}`);
   }
 };
 
@@ -26,7 +27,6 @@ const flatten = (array) => {
       finalArray.push(element);
     }
   }
-  console.log(finalArray);
   return finalArray;
 };
 
