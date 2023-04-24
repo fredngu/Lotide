@@ -28,6 +28,10 @@ const eqObjects = function(object1, object2) {
         if (eqArrays(object1[keys], object2[keys]) !== true) {
           return false;
         }
+      } else {
+        if (object1[keys] !== object2[keys]) {
+          return false;
+        }
       }
     }
   }
