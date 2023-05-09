@@ -1,3 +1,4 @@
+//Function - flatten: removes inner arays in array 
 const flatten = (array) => {
   let finalArray = [];
   for (const element of array) {

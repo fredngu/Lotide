@@ -1,3 +1,4 @@
+//Function - countOnly: count items in array only if it's true to count
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const item of allItems) {

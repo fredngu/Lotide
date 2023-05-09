@@ -1,6 +1,4 @@
-const assertEqual = require('./assertEqual');
-const assertArraysEqual = require('./assertArraysEqual');
-
+//Function - middle: returns the middle elements of an array
 const middle = function(array) {
   let middleArray = [];
   if (array.length <= 2) {
@@ -14,6 +12,6 @@ const middle = function(array) {
     }
   }
   return middleArray; 
-}
+};
 
 module.exports = middle;

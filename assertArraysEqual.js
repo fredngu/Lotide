@@ -1,5 +1,6 @@
 const eqArrays = require('./eqArrays');
 
+//Function - assertArraysEqual: Checks if both arrays are the same
 const assertArraysEqual = function(array1, array2) {
   const inspect = require('util').inspect; 
   if (eqArrays(array1, array2)) {

@@ -1,6 +1,6 @@
 const assertEqual = require('./assertEqual');
 
-//Tail Function
+//Function - tail: Returns all elements of an array besides the first
 const tail = function(array) {
   return array.slice(1);
 };
