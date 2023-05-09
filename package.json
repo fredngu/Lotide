@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@fredngu/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is pseudo-copy of the Lodash package. Contains similiar functions as Lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/fredngu/Lotide.git"
   },
-  "author": "",
+  "author": "Frederik Nguyen",
+  "email": "frederik.nguyen@outlook.com",
+  "url": "https://github.com/fredngu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fredngu/Lotide/issues"
