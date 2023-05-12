@@ -2,7 +2,7 @@
   "name": "@fredngu/lotide",
   "version": "1.0.1",
   "description": "This is pseudo-copy of the Lodash package. Contains similiar functions as Lodash",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
