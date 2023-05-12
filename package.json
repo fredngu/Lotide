@@ -1,6 +1,6 @@
 {
   "name": "@fredngu/lotide",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is pseudo-copy of the Lodash package. Contains similiar functions as Lodash",
   "main": "index.js",
   "directories": {
