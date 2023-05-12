@@ -25,4 +25,20 @@ describe("#eqObjects", () => {
     const test4 = eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject);
     assert.strictEqual(test4, false);
   });
+  it("Returns false since the second object is a different length", () => {
+    const test5 = eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { b: 2, a: { y: 0, z: 1 }});
+    assert.strictEqual(test5, true);
+  });
+  it("Returns false since the object values for the key 'a' is a different length", () => {
+    const test6 = eqObjects({ b: 2, a: { y: 0, z: 1 }}, { a: { z: 1 }, b: 2 });
+    assert.strictEqual(test6, false);
+  });
+  it("Returns false since value for 'a' is an object in only the first object", () => {
+    const test7 = eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 });
+    assert.strictEqual(test7, false);
+  });
+  it("Returns false since value for 'a' is array versus a non-array object", () => {
+    const test8 = eqObjects({ a: [2, 4, 3], b: 2 }, { a: { y: 0, z: 1 }, b: 2});
+    assert.strictEqual(test8, false);
+  });
 });
