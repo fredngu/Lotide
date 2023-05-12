@@ -1,7 +1,9 @@
-// index.js
+// index.js - all functions from lotide functions excluding assert-related functions
 const head   = require('./head');
 const tail   = require('./tail');
 const middle = require('./middle');
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
 const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
 const findKey = require('./findKey');
@@ -16,6 +18,8 @@ module.exports = {
   head,
   tail,
   middle,
+  eqArrays,
+  eqObjects,
   countLetters,
   countOnly,
   findKey,
